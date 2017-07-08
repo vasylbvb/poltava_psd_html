@@ -6,17 +6,80 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PSD>HTML</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header>
-    <nav aria-label="Main Navigation">
-        <li><a href="#">Examples</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Customers</a></li>
-        <li><a href="#">Our process</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Order now</a></li>
-    </nav>
+<header class="global-header container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="logo-box-container col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                <a href="index.html" class="logo-box">
+                    <span class="logo__img-box">
+                        <img src="images/logo1.png" alt="company logo PSD to HTML" class="logo__img">
+                    </span>
+                </a>
+            </div>
+            <div class="navbtn-box hidden-lg hidden-md hidden-sm visible-xs-block col-xs-6">
+                <button data-toggle="collapse" data-target="#main-nav" aria-expanded="false"
+                        class="navbtn navbar-toggle collapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-stack fa-lg">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-bars fa-stack-1x" id="bars"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="nav-container col-lg-7 col-md-10 col-sm-9 col-xs-8">
+                <nav class="navbar navbar-default main-nav" aria-label="Main Navigation">
+                    <div class="navbar-header main-nav__navbar-header">
+                        <div id="main-nav" class="navbar-collapse collapse" aria-expanded="false">
+                            <ul class="nav navbar-nav main-nav__nav">
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">Examples</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">Services</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">Customers</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">Our process</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">About</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">Order now</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-contacts-container col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <ul class="nav-contacts">
+                    <li class="nav-contacts__item">
+                        <a href="#" class="nav-contacts__phone">
+                            <i class="fa fa-phone-square fa-inverse"></i>
+                            US+1-888-122-12134
+                        </a>
+                    </li>
+                    <li class="nav-contacts__item">
+                        <a href="#" class="nav-contacts__skype">
+                            <i class="fa fa-skype fa-inverse"></i>
+                        </a>
+                    </li>
+                    <li class="nav-contacts__item">
+                        <a href="#" class="nav-contacts__mail">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </header>
 <main>
     <section></section>
@@ -30,5 +93,7 @@
     <section></section>
 </main>
 <footer></footer>
+<script src="js/vendor.min.js"></script>
+<script src="js/app.min.js"></script>
 </body>
 </html>
