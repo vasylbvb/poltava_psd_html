@@ -1,0 +1,27 @@
+@import "_vars";
+@import "_fonts";
+
+.orderform-container {
+  min-width: 100%;
+  min-height: 664px;
+  position: relative;
+  background: #dfebe9;
+  & > .orderform-container__secondary {
+    min-width: inherit;
+    height: 664px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    & > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  & > .orderform-container-inner {
+    max-width: @main-width;
+    margin: 0 auto;
+    min-height: inherit;
+  }
+}
