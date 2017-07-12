@@ -34,6 +34,8 @@ gulp.task("vendor-css", function(){
     return gulp.src([
         "node_modules/bootstrap/dist/css/bootstrap.css",
         "node_modules/normalize-css/normalize.css",
+        "node_modules/slick-carousel/slick/slick.css",
+        "node_modules/slick-carousel/slick/slick-theme.css",
         "node_modules/font-awesome/css/font-awesome.css"
     ])
         .pipe(concat("bootstrap.css"))
