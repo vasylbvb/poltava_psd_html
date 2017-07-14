@@ -4,6 +4,7 @@
     display: none;
   }
 }
+
 @media (max-width: 1200px) {
   .coding-service__inner-container > .coding-service__inner-slogan {
     margin-bottom: 40px;
@@ -24,6 +25,7 @@
       font-size: 16px;
     }
   }
+
   .footer-socials > .footer-socials__item {
     padding-right: 30px;
   }
@@ -58,9 +60,33 @@
     margin-left: 15px;
     margin-right: 15px;
   }
+
   .centered-slider__button-prev,
   .centered-slider__button-next {
     display: none;
+  }
+
+  .forms-field__responsive > .responsive-list-btn,
+  .forms-field__nonresponsive > .nonresponsive-list-btn {
+    font-size: 15px;
+  }
+
+  .forms-field__responsive-list,
+  .forms-field__nonresponsive-list {
+    width: 100%;
+    padding: 10px;
+    left: 0;
+  }
+
+  .forms-field__responsive-item,
+  .forms-field__nonresponsive-item {
+    & > label {
+      width: 85%;
+      & > .forms-field__responsive-item-name,
+      & > .forms-field__nonresponsive-item-name {
+        width: 80%;
+      }
+    }
   }
 }
 
@@ -92,6 +118,20 @@
 
   .customers-container__heading > h2 {
     padding: 0 150px;
+  }
+
+  .forms-field__responsive > .responsive-list-btn,
+  .forms-field__nonresponsive > .nonresponsive-list-btn {
+    font-size: 18px;
+  }
+
+  .forms-field__nonresponsive {
+    margin-bottom: 20px;
+  }
+
+  .forms-field__responsive-list,
+  .forms-field__nonresponsive-list {
+    position: static;
   }
 }
 
@@ -319,12 +359,15 @@
   .footer-container__row {
     padding: 30px 0;
   }
+
   .footer-main-nav__nav {
     margin-top: 30px;
   }
+
   .footer-contacts > .footer-contacts__item:last-child {
     padding-bottom: 30px;
   }
+
   .footer-socials > .footer-socials__item {
     padding-right: 20px;
   }
@@ -343,7 +386,25 @@
   .customers-container__heading > h2 {
     font-size: 24px;
   }
+
   .footer-copyright {
     font-size: 12px;
+  }
+
+  .forms-field__responsive-item,
+  .forms-field__nonresponsive-item {
+    & > label {
+      & > .forms-field__responsive-item-name,
+      & > .forms-field__nonresponsive-item-name {
+        width: 75%;
+      }
+    }
+  }
+}
+
+@media (max-width: 310px) {
+  .forms-field__responsive > .responsive-list-btn,
+  .forms-field__nonresponsive > .nonresponsive-list-btn {
+    font-size: 16px;
   }
 }
