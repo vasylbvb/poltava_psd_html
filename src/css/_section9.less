@@ -23,7 +23,7 @@
     max-width: @main-width;
     margin: 0 auto;
     min-height: inherit;
-    & > .orderform-container-row {
+    & .orderform-container-row {
       max-width: @main-width;
       min-height: inherit;
       padding-top: 128px;
@@ -139,6 +139,11 @@ div[class*="form-field"] input {
     }
     &:hover {
       transform: scale(1.05);
+      text-decoration: none;
+    }
+    &:focus {
+      outline: none;
+      outline-offset: 0;
     }
   }
 }
