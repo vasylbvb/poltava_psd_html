@@ -82,11 +82,14 @@
   }
   & > .stage-block__action {
     width: 90%;
-    vertical-align: middle;
-    display: inline-block;
     font-size: 16px;
     color: #dfebe9;
     text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
   }
   & > .stage-block__number {
     display: inline-block;
@@ -99,6 +102,15 @@
     right: -32px;
     transform: translateY(-50%);
     z-index: 2;
+  }
+  & > .triangle-secondary {
+    width: 0;
+    height: 0;
+    border-top: 70px solid @main-black-color;
+    border-right: 70px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   &:after {
     display: inline-block;
