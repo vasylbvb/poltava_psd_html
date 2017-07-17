@@ -991,28 +991,28 @@
                 <img src="images/7th-scr-Pattern.png" alt="">
             </div>
             <div class="container orderform-container-inner">
-                <form action="" method="POST" id="orderForm">
+                <form role="form" action="#" id="orderForm" class="validate-this">
                     <div class="row orderform-container-row">
                         <div class="col-lg-1 hidden-md hidden-sm hidden-xs"></div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-wrapper-container">
                             <div class="row form-wrapper">
-                                <div class="col-sm-6 xol-xs-12 form-field__name">
+                                <div class="col-sm-6 xol-xs-12 form-field__name form-group">
                                     <label for="name">Your name</label><br>
-                                    <input type="text" id="name">
+                                    <input type="text" id="name" data-error="what's your name?">
                                 </div>
-                                <div class="col-sm-6 xol-xs-12 form-field__email">
+                                <div class="col-sm-6 xol-xs-12 form-field__email form-group">
                                     <label for="emailAddress">E-mail</label><br>
-                                    <input type="email" id="emailAddress">
+                                    <input type="email" id="emailAddress" data-error="what's your email?">
                                 </div>
                                 <div class="col-xs-12 form-field__text">
                                     <label for="textArea">Message</label><br>
-                                    <textarea name="textarea" id="textArea" rows="5"></textarea>
+                                    <textarea name="textarea" id="textArea" rows="5" class="form-control"></textarea>
                                 </div>
-                                <div class="col-md-6 col-sm-10 col-xs-12 form-field__project">
+                                <div class="col-md-6 col-sm-10 col-xs-12 form-field__project form-group">
                                     <label for="projectTitle">Project Title</label><br>
-                                    <input type="text" id="projectTitle">
+                                    <input type="text" id="projectTitle" data-error="name your project please!">
                                 </div>
-                                <div class=" col-lg-3 col-md-8 col-sm-6 col-xs-8 form-field__number-pages">
+                                <div class=" col-lg-3 col-md-8 col-sm-6 col-xs-8 form-field__number-pages form-group">
                                     <label for="numberPages">Select no. of pages</label><br>
                                     <div id="numberPages" class="number-pages-wrapper">
                                         <div class="number-pages__col1">
@@ -1030,11 +1030,13 @@
                                                value="109">
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-xs-6 form-field__upload">
+                                <div class="col-md-3 col-xs-6 form-field__upload form-group">
                                     <label for="uploadBtn"></label><br>
                                     <a href="" class="form-field__upload-btn" id="uploadBtn">Upload Files</a>
                                 </div>
-                                <div class="col-md-6 col-xs-12 forms-field__responsive">
+                            </div>
+                            <div class="row form-wrapper">
+                                <div class="col-md-6 col-xs-12 forms-field__responsive form-group">
                                     <input type="checkbox" id="responsive-list-toggle"/>
                                     <label for="responsive-list-toggle" class="responsive-list-btn">Responsive Packages
                                         <i class="fa fa-caret-down "></i>
@@ -1152,7 +1154,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6 col-xs-12 forms-field__nonresponsive">
+                                <div class="col-md-6 col-xs-12 forms-field__nonresponsive form-group">
                                     <input type="checkbox" id="nonresponsive-list-toggle"/>
                                     <label for="nonresponsive-list-toggle" class="nonresponsive-list-btn">Non Responsive
                                         Packages
@@ -1330,7 +1332,7 @@
                                     <input type="text" style="display: none" class="summary__total-price-input" value="0">
                                 </div>
                                 <div class="summary__order-btn-container">
-                                    <a href="#" class="summary__order-btn">Order Now</a>
+                                    <button href="#" class="summary__order-btn" type="submit" id="sbmBtn">Order Now</button>
                                 </div>
                             </div>
                         </div>
