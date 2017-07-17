@@ -42,6 +42,7 @@
   .process-container__stages-row {
     text-align: center;
     text-align: -webkit-center;
+    text-align: -moz-center;
   }
 
   .process-container__slogan {
@@ -225,10 +226,16 @@
     padding: 20px 0;
   }
 
+  .features-column__one {
+    border-right: none;
+  }
+
   .features-column__one,
   .features-column__two,
   .features-column__three {
     height: initial;
+    padding: 0;
+    text-align: center;
   }
 
   .features-column__list {
@@ -237,6 +244,7 @@
 
   .features-column__item {
     line-height: 30px;
+    padding: 0;
   }
 
   .ourservices-container__heading > h2 {
@@ -307,7 +315,11 @@
     margin: 30px 0;
   }
 
+  .stage-name {
+    margin: 0 auto 4px;
+  }
   .stage-block {
+    margin: 0 auto;
     & > .stage-block__number {
       top: auto;
       right: auto;
