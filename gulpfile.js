@@ -19,7 +19,11 @@ gulp.task("img", function(){
         .pipe(imageMin())
         .pipe(gulp.dest("dist/images"));
 });
-
+gulp.task("img_for_mail", function(){
+    return gulp.src("src/images/email/*")
+        .pipe(imageMin())
+        .pipe(gulp.dest("dist/images/email"));
+});
 gulp.task("fonts", function () {
     return gulp.src([
         "node_modules/bootstrap/dist/fonts/*.*",
@@ -96,8 +100,10 @@ gulp.task("watch", ["build"], function(){
     gulp.watch("src/**/*.html").on("change", browserSync.reload);
     gulp.watch("src/images/*", ["img"]);
     gulp.watch("dist/images/*").on("change", browserSync.reload);
+    gulp.watch("src/images/email/*", ["img_for_mail"]);
+    gulp.watch("dist/images/email/*").on("change", browserSync.reload);
     gulp.watch("src/fonts/**/*", ["fonts"]);
     gulp.watch("dist/fonts/*").on("change", browserSync.reload);
 });
-gulp.task("build", ["html", "css:all", "js:all", "img", "fonts"]);
+gulp.task("build", ["html", "css:all", "js:all", "img", "img_for_mail", "fonts"]);
 gulp.task("default", ["build", "watch"]);
